@@ -13,7 +13,7 @@ The repository consists of multiple files that were used to evaluate the seven d
 - Mutual information
 
 ## Simulations
-The program that is used in order to run the simulations can be found under the `Simulations_MAP_algorithm.zip` tab. This java program can be used to first randomly partition a Bayesian network into an evidence set with random joint value assignment, an explanation set consisting of one explanation variable and a set of intermediate variables. Subsequently, the program can compute for this Bayesian network the maximal subset of intermediate variables that are MAP-independent and for every variable that is not MAP-independent, it can compute the test-selection strategy values for the in-degree, out-degree (specific for ALARM network) and the expected utility, expected Gini index and mutual information. The distance in the graph has to be read of from the network itself, as computing this can take a very long time. 
+The program that is used in order to run the simulations can be found under the `Simulations_MAP_algorithm.zip` tab. This java program can be used to first randomly partition a Bayesian network into an evidence set with random joint value assignment, an explanation set consisting of one explanation variable and a set of intermediate variables. Subsequently, the program can compute for this Bayesian network the maximal subset of intermediate variables that are MAP-independent and for every variable that is not MAP-independent, it can compute the test-selection strategy values for the in-degree, out-degree, total degree (specific for ALARM network) and the expected utility, expected Gini index and mutual information. The distance in the graph has to be read of from the network itself, as computing this can take a very long time. 
 
 After computing the test-selection strategy values for every intermediate variable that is not MAP-independent, it can be seen which of these variables would be best to observe by computing the expected number of MAP-independent variables that you get when observing the variable. In the end, the variable with the highest expected number of MAP-independent variables would be best to observe.
 
@@ -39,7 +39,7 @@ The `Heuristic data.csv` contains the data about the test-selection strategy val
 - The expected Gini index for the variable
 - The mutual information of the variable with the explanation variable
 - The expected number of MAP-independent variables that you get when observing the variable
-- The previous number of MAP-independent variables
+- The current number of MAP-independent variables
 - The minimum number of MAP-independent variables for observing a variable to a specific value assignment
 - The maximum number of MAP-independent variables for observing a variable to a specific value assignment
 
