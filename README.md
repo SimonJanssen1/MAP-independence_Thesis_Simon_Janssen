@@ -17,6 +17,8 @@ The program that is used in order to run the simulations can be found under the 
 
 After computing the test-selection strategy values for every intermediate variable that is not MAP-independent, it can be seen which of these variables would be best to observe by computing the expected number of MAP-independent variables that you get when observing the variable. In the end, the variable with the highest expected number of MAP-independent variables would be best to observe.
 
+Note: This program is made with the help of other members of the thesis group, Luuk Jacobs and Merlijn van Elteren, and extended from the source code provided in the course Artificial Intelligence: Principles & Techniques, given at Radboud University at the AI department as a second year course.
+
 ## Data
 The data consists of two files, namely the `Simulation data.csv` and the `Heuristic data.csv`. 
 
